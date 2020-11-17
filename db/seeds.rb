@@ -8,7 +8,7 @@
 Product.create!(title: 'Jeans',
   description:
     %{<p>
-      <em>The Best</em>
+      <em>The Best...</em>
       Not your traditional old blue jeans.These jeans are specially hand-made for your own comfort.
       </p>},
   image_url: 'jeans.jpg',
@@ -17,7 +17,7 @@ Product.create!(title: 'Jeans',
   Product.create!(title: 'Shirt',
     description:
       %{<p>
-        <em>Stylish</em>
+        <em>Stylish...</em>
         Both casual and smart. Can be worn anywhere really.
         </p>},
     image_url: 'shirt.jpg',
@@ -26,7 +26,7 @@ Product.create!(title: 'Jeans',
     Product.create!(title: 'Scarf',
       description:
         %{<p>
-          <em>Modern</em>
+          <em>Modern...</em>
           This scarf comes in a variety of colours.Whether it be winter or a cup final this is for tbe occasion of both.
           </p>},
       image_url: 'scarf.jpg',
