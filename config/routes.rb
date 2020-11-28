@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+resources "contacts", only: [:new, :create]
   get 'admin' => 'admin#index'
 
   controller :sessions do
