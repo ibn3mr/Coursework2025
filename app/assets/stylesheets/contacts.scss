@@ -2,32 +2,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.hidden { display: none; }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header.main {
+    text-align: center; // center on mobile
+    @media (min-width: 30em) {
+      text-align: left; // left align on desktop
+    }
+    background: #282;
+    margin: 0;
+    h1 {
+      display: none;
+    }
+  }
 
-.alert-error {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
-}
 
-.alert-alert {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
-}
+  .hidden { display: none; }
 
-.alert-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
-}
+  .alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+  }
 
-.alert-notice {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
+  .alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+  }
+
+  .alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+  }
+
+  .alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+  }
+
+  nav {
+    padding-bottom: 1em;
+    background: #141;
+    text-align: center;  // mobile has centered nav
+    @media (min-width: 30em) {
+      text-align: left; // desktop nav is left-aligned
+      padding: 1em;     // and needs more padding
+    }
+
 }

@@ -12,8 +12,10 @@ resources "contacts", only: [:new, :create]
   resources :users
   resources :orders
   resources :line_items
+  resources :contacts
   resources :carts
   root 'store#index', as: 'store_index'
+
 
   resources :products do
     get :who_bought, on: :member

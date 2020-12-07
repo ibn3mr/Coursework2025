@@ -27,7 +27,7 @@ Product.create!(title: 'Jeans',
       description:
         %{<p>
           <em>Modern...</em>
-          This scarf comes in a variety of colours.Whether it be winter or a cup final this is for tbe occasion of both.
+          This scarf comes in a variety of colours.Whether it be winter or a cup final this is for the occasion of both.
           </p>},
       image_url: 'scarf.jpg',
       price: 52.00)

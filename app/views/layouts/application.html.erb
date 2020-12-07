@@ -7,9 +7,19 @@
                             'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application',
                                'data-turbolinks-track': 'reload' %>
-  </head>
 
+
+  </head>
+  <style>
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+  </style>
   <body>
+
     <header class="main">
       <%= image_tag 'logo.png', alt: 'The Merchandise Company' %>
       <h1><%= @page_title %></h1>
@@ -24,9 +34,7 @@
 
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/questions">Questions</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="/contacts">Contact</a></li>
+          <li><a href="/contacts">Contact Us</a></li>
           <li><a href="/login">Log In</a></li>
         </ul>
 
@@ -46,4 +54,5 @@
       </main>
     </section>
   </body>
+    <footer>&copy; Copyright The Merchandise Company</footer>
 </html>
