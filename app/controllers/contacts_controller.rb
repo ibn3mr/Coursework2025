@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
       flash.now[:notice] = "Your Message sent to our Admin by Email, they will be with you soon"
     else
       flash.now[:error] = 'Cannot send message.'
-      render :new
+      format.html { render :new }
     end
   end
 end
